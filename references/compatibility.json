@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "orchestratorVersion": "10.1",
+  "bridge": {
+    "adapterVersion": "0.3.1-toharness.10.1",
+    "upstreamProject": "Seann0824/deepseek-harness-for-codex",
+    "upstreamBaseVersion": "0.3.1",
+    "nodeMinMajor": 22,
+    "features": [
+      "session-continuation",
+      "bridge-side-long-poll",
+      "multi-run-long-poll",
+      "durable-run-ledger",
+      "detached-run-reattach",
+      "cross-process-result-reconstruction",
+      "language-affinity-locale-sync",
+      "skill-affinity-routing",
+      "skill-file-forwarding",
+      "role-scoped-skill-inputs",
+      "skill-snapshot-integrity",
+      "bidirectional-context-sync",
+      "session-cursor-delta-sync",
+      "harness-first-session-adoption",
+      "direct-harness-user-override",
+      "control-owner-audit",
+      "checkpoint-assisted-context-return"
+    ],
+    "localFeatures": [
+      "codex-tool-timeout-alignment",
+      "legacy-wait-tool-hidden",
+      "toharness-public-skill-identity",
+      "embedded-vendored-runtime",
+      "vendored-runtime-integrity-manifest",
+      "single-package-skill-and-bridge-release"
+    ],
+    "recommendedCodexToolTimeoutSec": 3700,
+    "runtimePackaging": {
+      "mode": "embedded-vendored",
+      "canonicalBundlePath": "vendor/deepseek-harness-for-codex",
+      "compatibilityMirrorPath": "assets/bridge",
+      "externalUpstreamPluginRequired": false,
+      "externalUpstreamPluginPolicy": "disabled-by-default-to-avoid-duplicate-tools"
+    }
+  },
+  "harness": {
+    "existingPolicy": "probe-first",
+    "provisionPolicy": "compatible-pinned",
+    "validatedPackages": [
+      "@deepseek-ai/dsh@0.1.5-rc.1"
+    ],
+    "defaultProvisionPackage": "@deepseek-ai/dsh@0.1.5-rc.1",
+    "unknownVersionPolicy": "read-only-probe-then-use-for-current-run-only"
+  },
+  "mcpClient": {
+    "package": "@deepseek-ai/dsh-mcp-client",
+    "versionPolicy": "runtime-compatible"
+  },
+  "orchestratorName": "Toharness"
+}
