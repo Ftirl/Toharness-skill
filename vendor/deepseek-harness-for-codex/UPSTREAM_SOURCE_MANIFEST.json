@@ -1,0 +1,16 @@
+{
+  "project": "Seann0824/deepseek-harness-for-codex",
+  "baseVersion": "0.3.1",
+  "branchObserved": "main",
+  "files": {
+    "src/bin.ts": "31ad0abc17d732d860768c575366aa5682a0fd07",
+    "src/run-manager.ts": "d00e541d2af5051bae3c99fb1fc5bbbee7c4aa89",
+    "src/runtime.ts": "0761320af36d9e4c9823ca3a7cb5565ae4526e27",
+    "src/server.ts": "caaf98fb9dba154e626bc94eee720ac6195d17e0",
+    "src/types.ts": "0c61b0e9e408257d1fe62467ea4b7161708df351",
+    "package.json": "ff4aef07d0d1c73ecd00468c846ecac57dfafb25",
+    "package-lock.json": "ea70862a2f19cb00ebc58fa9b233e4596d9e1d69",
+    "LICENSE": "3061e608387c12c85f4688c97e2c2e8e17553e9f"
+  },
+  "note": "SHA values are upstream Git blob SHAs used for provenance/reference; the executable runtime in this directory is the Toharness-customized derivative."
+}

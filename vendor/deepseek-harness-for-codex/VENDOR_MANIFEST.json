@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "runtimeName": "Toharness Embedded DeepSeek Harness for Codex Runtime",
+  "packageName": "toharness-deepseek-harness-for-codex",
+  "adapterVersion": "0.3.1-toharness.10.1",
+  "orchestrator": "Toharness",
+  "orchestratorVersion": "10.1",
+  "upstream": {
+    "project": "Seann0824/deepseek-harness-for-codex",
+    "package": "deepseek-harness-for-codex",
+    "baseVersion": "0.3.1",
+    "license": "MIT",
+    "repository": "https://github.com/Seann0824/deepseek-harness-for-codex"
+  },
+  "entry": "dist/bin.mjs",
+  "verificationEntry": "verify.mjs",
+  "nodeMinMajor": 22,
+  "hashes": {
+    "dist/bin.mjs": "590261de004cc908a880ae136aa56af24477805f44542c7a11399b5e8c351879",
+    "verify.mjs": "17a8595b4f73c542c515b16e399c2d12f1546999696b15c4dc493c8b94d93103",
+    "package-lock.json": "9953e92d85f0af4f4faed1cb1671aa265ce2808b90d29940ab07ad4faa0e5322"
+  },
+  "bootstrapPolicy": "copy-this-vendored-package-to-CODEX_HOME-runtime-then-register-local-entry",
+  "externalPluginRequired": false
+}

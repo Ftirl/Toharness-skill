@@ -1,0 +1,30 @@
+{
+  "name": "toharness-deepseek-harness-for-codex",
+  "version": "0.3.1-toharness.10.1",
+  "private": true,
+  "type": "module",
+  "description": "Vendored DeepSeek Harness for Codex runtime customized and pinned for Toharness v10.1 closed-loop orchestration.",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "yaml": "^2.9.1",
+    "zod": "4.4.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "toharness-deepseek-harness-for-codex": "dist/bin.mjs"
+  },
+  "files": [
+    "dist/",
+    "verify.mjs",
+    "LICENSE",
+    "PROVENANCE.md",
+    "VENDOR_MANIFEST.json",
+    "UPSTREAM_SOURCE_MANIFEST.json",
+    "UPSTREAM.md",
+    "PATCHSET.md",
+    "README.md"
+  ]
+}
